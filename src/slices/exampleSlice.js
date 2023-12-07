@@ -1,4 +1,4 @@
-import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
+import { createSlice } from '@reduxjs/toolkit'; // Import createAsyncThunk pending here
 // import axios from "axios";
 // createAsyncThunk and axios are going to be used later
 // when we need to make API requests to Rails API endpoints.
@@ -6,7 +6,7 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 const initialState = {
   counter: 0,
   data: [],
-}
+};
 
 // API REQUEST EXAMPLE:
 // --------------------
@@ -28,7 +28,7 @@ const exampleSlice = createSlice({
     },
     substract: (state) => {
       state.counter -= 1;
-    }
+    },
   },
   // ASYNCRONOUS REDUCERS:
   // ------------------

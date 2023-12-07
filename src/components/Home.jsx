@@ -1,12 +1,10 @@
-import Counter from "./Counter";
+import Counter from './Counter';
 
-const Home = () => {
-  return (
-    <>
-      <h1>Welcome to the home page</h1>
-      <Counter />
-    </>
-  );
-}
+const Home = () => (
+  <>
+    <h1>Welcome to the home page</h1>
+    <Counter />
+  </>
+);
 
 export default Home;
