@@ -4,8 +4,8 @@ import { useEffect, useState } from 'react';
 const Home = () => {
 
   useEffect(()=>{
-    user = JSON.parse(localStorage.getItem('user'));
-    if (user.username) { // If user is already logged in redirects to the motors page
+    const user = JSON.parse(localStorage.getItem('user'));
+    if (user) { // If user is already logged in redirects to the motors page
       return redirect('/motors');
     }
   }, []);
