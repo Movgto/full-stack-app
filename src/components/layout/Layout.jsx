@@ -1,19 +1,37 @@
-import { useEffect } from "react";
-import { Outlet, redirect } from "react-router";
+import React, { useState } from 'react';
+import PropTypes from 'prop-types';
+import MenuIcon from '@mui/icons-material/Menu';
+import CloseIcon from '@mui/icons-material/Close';
+import Sidebar from './Sidebar';
 
-export default function Layout() {
+const Layout = ({ children }) => {
+  const [showSidebar, setShowSidebar] = useState(false);
 
-  useEffect(() => {
-    let user = JSON.parse(localStorage.getItem('user'));
-
-    if (user) {
-      return redirect('/motors');
-    }
-  }, []);
+  const toggleSidebar = () => {
+    setShowSidebar(!showSidebar);
+  };
 
   return (
-    <>
-      <Outlet />
-    </>
+    <div className="flex w-full relative h-screen">
+      <div className={`md:w-1/5 top-0 absolute z-1 md:hidden transition-all duration-300 transform ${showSidebar ? 'translate-y-0 mt-20' : '-translate-y-full'}`}>
+        <Sidebar toggleSidebar={toggleSidebar} />
+      </div>
+      <div className="md:w-1/5 bg-bodyBg hidden md:block">
+        <Sidebar toggleSidebar={toggleSidebar} />
+      </div>
+      <div className="w-full flex flex-col md:w-4/5 overflow-y-auto bg-bodyBg">
+        {children}
+      </div>
+      <div className="flex absolute z-1">
+        <button type="button" className="block text-white p-2 md:hidden" onClick={toggleSidebar}>
+          {showSidebar ? <CloseIcon /> : <MenuIcon />}
+        </button>
+      </div>
+    </div>
   );
-}
+};
+export default Layout;
+
+Layout.propTypes = {
+  children: PropTypes.node.isRequired,
+};
