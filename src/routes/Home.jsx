@@ -1,11 +1,43 @@
-import { NavLink } from "react-router-dom";
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import MotorList from '../components/motors/MotorList';
+import { bikesSelector } from '../redux/store';
+import { fetchBikes } from '../redux/bikes/thunk';
+import LoadingScreen from '../components/conditions/LoadingScreen';
+import NoRecords from '../components/conditions/NoRecords';
 
-export default function Home() {
+const Home = () => {
+  const dispatch = useDispatch();
+  const bikes = useSelector(bikesSelector);
+
+  useEffect(() => {
+    dispatch(fetchBikes());
+  }, [dispatch]);
+
+  if (bikes.isLoading) {
+    return (
+      <LoadingScreen />
+    );
+  }
+
+  if (bikes.error) {
+    return (
+      <div>
+        <h1 className="text-white text-2xl text-center">Error</h1>
+        <p className="text-white text-center">{bikes.errorMsg}</p>
+      </div>
+    );
+  }
+
+  const bikesWithoutRemoved = bikes.bikes.filter((bike) => bike.removed === false);
+
+  if (bikesWithoutRemoved.length === 0) {
+    return <NoRecords message="No bikes available" />;
+  }
   return (
-    <>
-      <h1>Home</h1>
-      <NavLink to='/login'>Log In</NavLink>
-      <NavLink to='/signup'>Sign Up</NavLink>
-    </>
+    <div className="h-screen flex flex-col justify-center align-center">
+      <MotorList motorcycles={bikes.bikes} />
+    </div>
   );
-}
+};
+export default Home;
