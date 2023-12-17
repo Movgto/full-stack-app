@@ -37,9 +37,11 @@ const SignInPage = () => {
               <FontAwesomeIcon icon={faUserGear} />
             </div>
             <input
+              aria-label="Username"
+              id="username"
               className="form-control bg-bodyBg focus:bg-inputBg focus:outline-none text-white border-none w-40 px-2 mx-4 py-1 rounded-md placeholder-white md:w-96"
               type="text"
-              name="name"
+              name="username"
               placeholder="Username"
               onChange={handleChange}
               value={user}

@@ -35,7 +35,7 @@ const Sidebar = ({ toggleSidebar }) => {
     <div className="flex flex-col gap-12 sticky bg-customBg  top-0 h-80 md:h-screen rounded-3xl md:rounded-none border-customBorder border-r-0 md:border-r font-roboto md:bg-bodyBg">
       <div className=" w-full justify-center items-center mt-4 mb-8 hidden md:flex">
         <div className="w-40">
-          <img src={logo} alt="Harley Davidson Logo" className="h-auto w-full" />
+          <img src={logo} alt="Ducati Logo" className="h-auto w-full" />
         </div>
       </div>
       <nav className="flex flex-col">
