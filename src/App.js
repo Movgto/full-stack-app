@@ -16,6 +16,7 @@ import LoadingScreen from './components/conditions/LoadingScreen';
 import AddNew from './routes/AddNew';
 import Delete from './routes/Delete';
 import ItemDetail from './routes/ItemDetail';
+import MyReservations from './routes/MyReservations';
 
 function App() {
   const dispatch = useDispatch();
@@ -67,6 +68,7 @@ function App() {
           <Route path="/add/:id" element={<AddNew />} />
           <Route path="/delete/:id" element={<Delete />} />
           <Route path="/motors/:id" element={<ItemDetail />} />
+          <Route path="/myReservations" element={<MyReservations />} />
         </Routes>
       </Layout>
     </>
