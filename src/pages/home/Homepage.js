@@ -10,13 +10,13 @@ const HomePage = () => (
     style={{ backgroundImage: `url(${backgroundImage})` }}
   >
     <div className="text-center text-white">
-      <h1 className="text-4xl font-bold text-white mb-6 log-text bg-gradient-to-r from-green-400 via-green-500 to-green-600 p-4 rounded-lg">
+      <h1 className="text-4xl font-bold text-black mb-6 log-text bg-gradient-to-r from-green-400 via-green-500 to-green-600 p-4 rounded-lg">
         BOOK YOUR DUCATI NOW
       </h1>
       <Link to="/signin">
         <button
           type="button"
-          className="bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-6 rounded-full shadow-md hover:shadow-lg transition duration-300"
+          className="bg-green-500 hover:bg-green-600 text-black font-semibold py-2 px-6 rounded-full shadow-md hover:shadow-lg transition duration-300"
         >
           LOGIN
         </button>

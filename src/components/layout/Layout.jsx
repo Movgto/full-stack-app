@@ -23,7 +23,7 @@ const Layout = ({ children }) => {
         {children}
       </div>
       <div className="flex absolute z-1">
-        <button type="button" className="block text-white p-2 md:hidden" onClick={toggleSidebar}>
+        <button type="button" className="block text-black p-2 md:hidden" onClick={toggleSidebar}>
           {showSidebar ? <CloseIcon /> : <MenuIcon />}
         </button>
       </div>

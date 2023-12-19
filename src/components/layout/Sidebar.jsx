@@ -44,9 +44,9 @@ const Sidebar = ({ toggleSidebar }) => {
             <NavLink
               key={item.label}
               to={item.to}
-              className="hover:text-white text-white hover:bg-customYellow pt-2 pb-2 pl-6 ml-4 font-medium"
+              className="hover:text-white text-black hover:bg-customYellow pt-2 pb-2 pl-6 ml-4 font-medium"
             >
-              <span className="mr-2 text-white ">{item.icon}</span>
+              <span className="mr-2 text-black ">{item.icon}</span>
               {item.label}
             </NavLink>
           ))}
@@ -71,7 +71,7 @@ const Sidebar = ({ toggleSidebar }) => {
           {' '}
           <span className="hidden md:flex">Logout</span>
         </button>
-        <div className="justify-center gap-4 text-white pb-4 hidden md:flex">
+        <div className="justify-center gap-4 text-black pb-4 hidden md:flex">
           <TwitterIcon />
           <FacebookIcon />
           <InstagramIcon />

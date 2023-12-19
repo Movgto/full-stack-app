@@ -17,16 +17,20 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #191719;
+  background-color: #E4202D;
 }
 
 .spinner {
   border: 4px solid #f1f1f1;
-  border-top: 4px solid #ca5202;
+  border-top: 4px solid #FFFFFF;
   border-radius: 50%;
   width: 40px;
   height: 40px;
   animation: spin 1s linear infinite;
+}
+
+.bg-signInMobile {
+ background-color: #E4202D;
 }
 
 /* Add this CSS to set a fixed width for select elements */
