@@ -1,14 +1,15 @@
+import './App.css';
+import 'react-toastify/dist/ReactToastify.css';
+
+import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Layout from './components/Layout';
-import Home from './components/Home';
+import Reserve from './routes/Reserve';
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-        </Route>
+        <Route path="/reserve" element={<Reserve />} />
       </Routes>
     </BrowserRouter>
   );
