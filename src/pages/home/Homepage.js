@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 // Import the background image
-import backgroundImage from '../../images/.jpg';
+import backgroundImage from '../../images/bg-bikes.jpg';
 
 const HomePage = () => (
   <div
