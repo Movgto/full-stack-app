@@ -18,7 +18,7 @@ module.exports = {
         customDark: '#C2601F',
         bodyBg: '#FFFFFF',
         harleyOrange: '#E4202D',
-        inputBg: 'rgb(44, 44, 44)',
+        inputBg: 'rgb(227, 218, 218)',
         signInMobile: '#fb8622',
       },
     },

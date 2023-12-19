@@ -83,10 +83,10 @@ const ReservationForm = ({ bikes }) => {
     <div className="flex flex-col items-center justify-center h-screen mx-auto p-4">
       <div className="p-4 rounded-xl">
         <div className="text-center mb-4">
-          <h2 className="text-2xl text-white font-semibold mb-2">
+          <h2 className="text-2xl text-black font-semibold mb-2">
             Book a Ducati Test Ride
           </h2>
-          <p className="text-gray-600 mx-auto max-w-2xl">
+          <p className="text-black-600 mx-auto max-w-2xl">
             There are 11 different versions of Ducati available for testing.
             We have showrooms all over the globe which some include test
             riding facilities.
@@ -106,7 +106,7 @@ const ReservationForm = ({ bikes }) => {
               type="date"
               id="date"
               name="date"
-              className="w-full px-4 py-2 rounded-md border-gray-300 text-white focus:outline-none  focus:border-blue-500  bg-inputBg focus:bg-inputBg"
+              className="w-full px-4 py-2 rounded-md border-gray-300 text-black focus:outline-none  focus:border-blue-500  bg-inputBg focus:bg-inputBg"
             />
             {/* Add a CSS class to target the date input's icon */}
             <style>
@@ -124,7 +124,7 @@ const ReservationForm = ({ bikes }) => {
                 type="text"
                 id="item_id"
                 name="item_id"
-                className="w-full px-4 py-2 rounded-md text-white focus:outline-none focus:border-blue-500 bg-inputBg focus:bg-inputBg"
+                className="w-full px-4 py-2 rounded-md text-black focus:outline-none focus:border-blue-500 bg-inputBg focus:bg-inputBg"
                 value={filteredBikes[0].name}
               />
               <ErrorMessage name="item_id" component="div" className="text-red-600" />
@@ -164,7 +164,7 @@ const ReservationForm = ({ bikes }) => {
             {/* Add text-center class for center alignment */}
             <button
               type="submit"
-              className="bg-customBg px-4 py-2 rounded-md text-white hover:bg-customDark focus:outline-none"
+              className="bg-customBg px-4 py-2 rounded-md text-black hover:bg-customYellow focus:outline-none"
             >
               Book now
             </button>

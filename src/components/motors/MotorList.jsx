@@ -49,8 +49,8 @@ const MotorList = ({ motorcycles }) => {
   return (
     <div className=" flex flex-col bg-bodyBg">
       <div className="flex flex-col justify-center align-center items-center pb-8 font-roboto">
-        <h1 className="font-bold text-white text-2xl">LATEST MODEL</h1>
-        <h1 className="text-sm text-gray-500">please select a model</h1>
+        <h1 className="font-bold text-black text-2xl">LATEST MODEL</h1>
+        <h1 className="text-sm text-gray-500">Please select a model</h1>
       </div>
       <Slider
         dots={dots}
