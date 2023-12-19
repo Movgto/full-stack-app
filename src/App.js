@@ -15,6 +15,7 @@ import createUser from './redux/user/thunk';
 import LoadingScreen from './components/conditions/LoadingScreen';
 import AddNew from './routes/AddNew';
 import Delete from './routes/Delete';
+import ItemDetail from './routes/ItemDetail';
 
 function App() {
   const dispatch = useDispatch();
@@ -65,6 +66,7 @@ function App() {
           <Route path="/reserve" element={<Reserve />} />
           <Route path="/add/:id" element={<AddNew />} />
           <Route path="/delete/:id" element={<Delete />} />
+          <Route path="/motors/:id" element={<ItemDetail />} />
         </Routes>
       </Layout>
     </>

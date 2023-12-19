@@ -115,7 +115,7 @@ const MotorcycleForm = ({
     <div className="flex justify-center">
       <button
         type="submit"
-        className="bg-harleyOrange text-white py-3 px-12 rounded hover:bg-orange-700 shadow-md font-roboto font-bold"
+        className="bg-customYellow text-white py-3 px-12 rounded hover:bg-red-700 shadow-lg font-roboto font-bold"
       >
         Add New Motorcycle
       </button>

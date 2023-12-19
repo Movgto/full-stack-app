@@ -25,8 +25,8 @@ const Details = () => {
   if (error) {
     return (
       <div>
-        <h1 className="text-white text-2xl text-center">Error</h1>
-        <p className="text-white text-center">{ errMsg }</p>
+        <h1 className="text-black text-2xl text-center">Error</h1>
+        <p className="text-black text-center">{ errMsg }</p>
       </div>
     );
   }
@@ -39,7 +39,7 @@ const Details = () => {
           </div>
         </div>
         <div className="flex flex-col gap-2 w-80 px-4 py-4">
-          <div className="flex flex-col mb-10  text-white items-end">
+          <div className="flex flex-col mb-10  text-black items-end">
             <h1 className="text-2xl font-bold">
               {bike.name}
             </h1>
@@ -58,7 +58,7 @@ const Details = () => {
                 {bike.finance_fee}
               </span>
             </li>
-            <li className="py-2 px-2 flex justify-between text-white text-sm">
+            <li className="py-2 px-2 flex justify-between text-black text-sm">
               <span>Option to purchase fee</span>
               <span>
                 $
@@ -72,7 +72,7 @@ const Details = () => {
                 {bike.total_amount_payable}
               </span>
             </li>
-            <li className="py-2 px-2 flex justify-between text-white text-sm">
+            <li className="py-2 px-2 flex justify-between text-black text-sm">
               <span>Duration</span>
               <span>
                 {bike.duration}
@@ -81,7 +81,7 @@ const Details = () => {
               </span>
             </li>
           </ul>
-          <div className="px-2 flex text-sm text-white font-medium">
+          <div className="px-2 flex text-sm text-black font-medium">
             <span>
               <span className="font-extrabold">5.4% APR </span>
               Representative
