@@ -7,7 +7,7 @@ const MotorcycleForm = ({
   <form onSubmit={(e) => handleSubmit(e)}>
     <div className="mb-3">
       <label htmlFor="name" className="text-white block mb-2 font-roboto font-bold">
-        Name *:
+        Name:
         <input
           id="name"
           className="w-full p-2 rounded text-black"
@@ -21,7 +21,7 @@ const MotorcycleForm = ({
     </div>
     <div className="mb-3">
       <label htmlFor="image" className="text-white block mb-2 font-roboto font-bold">
-        Image *:
+        Image:
         <input
           ref={imageInputRef}
           id="image"
@@ -34,7 +34,7 @@ const MotorcycleForm = ({
     </div>
     <div className="mb-3">
       <label htmlFor="description" className="text-white block mb-2 font-roboto font-bold">
-        Description *:
+        Description:
         <textarea
           id="description"
           className="w-full p-2 rounded text-black font-roboto font-bold"
@@ -115,7 +115,7 @@ const MotorcycleForm = ({
     <div className="flex justify-center">
       <button
         type="submit"
-        className="bg-customRed text-white py-3 px-12 rounded hover:bg-red-700 shadow-lg font-roboto font-bold"
+        className="bg-customBg text-white py-3 px-12 rounded hover:bg-customDark shadow-lg font-roboto font-bold"
       >
         Add New Motorcycle
       </button>

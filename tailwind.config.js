@@ -15,7 +15,7 @@ module.exports = {
         customBorder: '#DDDDDD',
         customIcon: '#443850',
         customBg: '#E4202D',
-        customDark: '#C2601F',
+        customDark: '#b51010',
         bodyBg: '#FFFFFF',
         ducatiRed: '#E4202D',
         inputBg: 'rgb(227, 218, 218)',
