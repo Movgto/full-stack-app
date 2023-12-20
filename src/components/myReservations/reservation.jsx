@@ -11,7 +11,7 @@ import getMonthDay from './functions/getMonthDay';
 const Reservation = ({ reservation, bikes }) => (
   <tr key={reservation.id}>
     <td className="border border-gray-300 hidden lg:table-cell">
-      <div className=" bg-customBg flex justify-center items-center">
+      <div className=" bg-bodyBg flex justify-center items-center">
         <img className="h-40" src={getItemImage(bikes, reservation)} alt="motor" />
       </div>
     </td>

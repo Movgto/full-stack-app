@@ -164,7 +164,7 @@ const ReservationForm = ({ bikes }) => {
             {/* Add text-center class for center alignment */}
             <button
               type="submit"
-              className="bg-customBg px-4 py-2 rounded-md text-black hover:bg-customYellow focus:outline-none"
+              className="bg-customBg px-4 py-2 rounded-md text-white hover:bg-customDark focus:outline-none"
             >
               Book now
             </button>
