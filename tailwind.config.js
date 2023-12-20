@@ -17,7 +17,7 @@ module.exports = {
         customBg: '#E4202D',
         customDark: '#C2601F',
         bodyBg: '#FFFFFF',
-        ducatiOrange: '#E4202D',
+        ducatiRed: '#E4202D',
         inputBg: 'rgb(227, 218, 218)',
         signInMobile: '#fb8622',
       },
