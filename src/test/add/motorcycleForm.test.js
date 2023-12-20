@@ -1,10 +1,10 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import Reservation from '../../components/_mock_/Reservation';
+import MotorcycleForm from '../../components/_mock_/MotorcycleForm';
 
-describe('Reservation', () => {
+describe('MotorcycleForm', () => {
   it('renders correctly', () => {
-    const component = renderer.create(<Reservation />);
+    const component = renderer.create(<MotorcycleForm />);
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });
