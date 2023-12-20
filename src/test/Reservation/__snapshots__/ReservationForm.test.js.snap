@@ -9,53 +9,53 @@ exports[`ReservationForm renders correctly 1`] = `
     htmlFor="date"
   >
     Date:
+    <input
+      className="w-full px-4 py-2 rounded-md text-white bg-inputBg focus:bg-inputBg border-gray-300 focus:outline-none focus:border-blue-500"
+      id="date"
+      name="date"
+      type="date"
+    />
   </label>
-  <input
-    className="w-full px-4 py-2 rounded-md text-white bg-inputBg focus:bg-inputBg border-gray-300 focus:outline-none focus:border-blue-500"
-    id="date"
-    name="date"
-    type="date"
-  />
   <label
     className="block text-gray-600"
-    htmlFor="motorcycle"
+    htmlFor="item_id"
   >
     Motorcycle:
+    <input
+      className="w-full px-4 py-2 rounded-md text-white focus:outline-none focus:border-blue-500 bg-inputBg focus:bg-inputBg"
+      id="item_id"
+      name="item_id"
+      type="text"
+      value="Mock Motorcycle"
+    />
   </label>
-  <input
-    className="w-full px-4 py-2 rounded-md text-white focus:outline-none focus:border-blue-500  bg-inputBg focus:bg-inputBg"
-    id="item_id"
-    name="item_id"
-    type="text"
-    value="Mock Motorcycle"
-  />
   <label
     className="block text-gray-600"
     htmlFor="city"
   >
     Location:
+    <select
+      className="w-full border-gray-300 focus:outline-none bg-inputBg focus:bg-inputBg focus:border-customBg"
+      id="city"
+      name="city"
+    >
+      <option
+        value="New York"
+      >
+        New York
+      </option>
+      <option
+        value="Los Angeles"
+      >
+        Los Angeles
+      </option>
+      <option
+        value="Chicago"
+      >
+        Chicago
+      </option>
+    </select>
   </label>
-  <select
-    className="w-full border-gray-300 focus:outline-none bg-inputBg focus:bg-inputBg focus:border-customBg"
-    id="city"
-    name="city"
-  >
-    <option
-      value="New York"
-    >
-      New York
-    </option>
-    <option
-      value="Los Angeles"
-    >
-      Los Angeles
-    </option>
-    <option
-      value="Chicago"
-    >
-      Chicago
-    </option>
-  </select>
   <button
     className="bg-customBg px-4 py-2 rounded-md text-white hover:bg-customDark focus:outline-none"
     type="submit"
