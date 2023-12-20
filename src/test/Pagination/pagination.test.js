@@ -1,7 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import Pagination from '../../components/myReservations/pagination';
-import { currentPageMock, totalPagesMock, onPageChangeMock } from '../../components/__mock__/Pagination';
+import { currentPageMock, totalPagesMock, onPageChangeMock } from '../../components/_mock_/Pagination';
 
 describe('Pagination Snapshot', () => {
   it('matches snapshot', () => {
