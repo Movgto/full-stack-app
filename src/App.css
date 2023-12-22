@@ -1,0 +1,65 @@
+.App {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.form {
+  flex: 0 1 60%;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #fff;
+}
+
+.spinner {
+  border: 4px solid #f1f1f1;
+  border-top: 4px solid #e4202d;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+.bg-signInMobile {
+  background-color: #e4202d;
+}
+
+/* Add this CSS to set a fixed width for select elements */
+.fixed-width-select {
+  width: 200px; /* Adjust the width as needed */
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.sign-in-bg {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+
+  @media (max-width: 768px) {
+    background-image: url('./images/bg-bikes.jpg');
+  }
+
+  @media (min-width: 768px) {
+    background-image: url('./images/bg-bikes-desktop2.jpg');
+    background-position: center center;
+  }
+}
